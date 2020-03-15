@@ -10,8 +10,5 @@ Pandas
 
 You will need to change the path of the csv to one that will fit your computer
 
-and also you will need to run this as an administrator in order for the file to create CSV's
-if you do not run this as Admin then you will run into a PermissionError
-
 Please contact me if you have any questions about the code or how to run it.
 Thank you for your consideration and time
