@@ -26,13 +26,13 @@ manufacturer = []
 available_product = []
 for i in range(len(manufacturer_available)):
     if i % 2 == 0:
-        available_product.append(manufacturer_available[i])
-    else:
         manufacturer.append(manufacturer_available[i])
-df = pd.DataFrame({'manufacturer': available_product,
+    else:
+        available_product.append(manufacturer_available[i])
+df = pd.DataFrame({'manufacturer': manufacturer,
                   'product id': product_id,
                   'model': model,
                   'price': price,
-                  "available product": manufacturer})
+                  "available product": available_product})
 df[df['manufacturer'].str.match('By: Foo INC')].to_csv(r"C:\Users\i_miz\Documents\Visual_Studio_Projects\Webscraper.csv", index=False)
 df[df.index.isin([45, 49, 112, 137, 141, 155, 160, 168, 172])].to_csv(r"C:\Users\i_miz\Documents\Visual_Studio_Projects\Id.csv", index=False)
