@@ -34,5 +34,5 @@ df = pd.DataFrame({'manufacturer': manufacturer,
                   'model': model,
                   'price': price,
                   "available product": available_product})
-df[df['manufacturer'].str.match('By: Foo INC')].to_csv(r"C:\Users\i_miz\Documents\Visual_Studio_Projects\Webscraper.csv", index=False)
-df[df.index.isin([45, 49, 112, 137, 141, 155, 160, 168, 172])].to_csv(r"C:\Users\i_miz\Documents\Visual_Studio_Projects\Id.csv", index=False)
+df[df['manufacturer'].str.match('By: Foo INC')].to_csv(r"C:\Users\i_miz\Documents\Visual_Studio_Projects\Prices.csv", index=False)
+df[df.index.isin([45, 49, 112, 137, 141, 155, 160, 168, 172])].to_csv(r"C:\Users\i_miz\Documents\Visual_Studio_Projects\Inventory.csv", index=False)
