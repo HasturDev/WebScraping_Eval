@@ -9,7 +9,7 @@ manufacturer_available = []
 price = []
 model = []
 product_id = []
-#change to an on_click() instead of page calling
+#change to an on_click() instead of calling the page by page number
 for i in range(35):
     website = ('http://eval.arborian.com/?page=')
     session.get(website + str(i))
