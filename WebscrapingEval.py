@@ -14,6 +14,7 @@ for i in range(35):
     website = ('http://eval.arborian.com/?page=')
     session.get(website + str(i))
     # put in for page load times
+    # Problem: problably want to change this to a while loop
     time.sleep(5)
     # scrape site by tags
     bs = BeautifulSoup(session.page_source, 'lxml')
