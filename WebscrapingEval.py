@@ -30,9 +30,10 @@ for i in range(len(manufacturer_available)):
     else:
         available_product.append(manufacturer_available[i])
 df = pd.DataFrame({'manufacturer': manufacturer,
-                  'product id': product_id,
+                  'product_id': product_id,
                   'model': model,
                   'price': price,
-                  "available product": available_product})
+                  "available product": available_product})  
 df[df['manufacturer'].str.match('By: Foo INC')].to_csv(r"C:\Users\i_miz\Documents\Visual_Studio_Projects\Prices.csv", index=False)
-df[df.index.isin([45, 49, 112, 137, 141, 155, 160, 168, 172])].to_csv(r"C:\Users\i_miz\Documents\Visual_Studio_Projects\Inventory.csv", index=False)
+someproduct_ids = df.loc[df['product_id'].isin(['198765', '382587', '251184', '127853', '601484', '699028', '261549', '750518']), ['product_id', 'price']]
+someproduct_ids.to_csv(r"C:\Users\i_miz\Documents\Visual_Studio_Projects\Inventory_stuff.csv", index=False)
