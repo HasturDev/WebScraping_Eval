@@ -44,8 +44,9 @@ df = pd.DataFrame({'manufacturer': manufacturer,
 # Possible_answer: maybe try having the str.match be a function def somefunc(i): .str.match[i]?
 df[df['manufacturer'].str.match('By: Foo INC')].to_csv(r"C:\Users\i_miz\Documents\Visual_Studio_Projects\Prices.csv", index=False)
 # Problem: want this to work without calling it as a seperate obj before making it a csv
-# Problem: In master this is solved by calling the Index instead of the id, Make sure you GOOGLE ALL CODE ERRORS BEFORE GOING TO SOMETHING ELSE
+# Problem: In master this is solved by calling the Index instead of the id, make sure you GOOGLE ALL CODE ERRORS BEFORE GOING TO SOMETHING ELSE
 someproduct_ids = df.loc[df['product_id'].isin(['198765', '382587', '251184', '127853', '601484', '699028', '261549', '750518']), ['product_id', 'price']]
 someproduct_ids.to_csv(r"C:\Users\i_miz\Documents\Visual_Studio_Projects\Inventory_stuff.csv", index=False)
 # Problem: Create tests in order to insure Data Integrity and accuracy
-# Problem: I have no idea what those tests would look like
+# Problem: I have no idea what those tests would look like so read some testing goat or something to stop being bad at that
+# Problem: No uses of timeit used in jupyter notebook while creating this code
