@@ -6,6 +6,7 @@ Beautiful Soup 4.4
 
 Selenium (With ChromeDriver)
 If you want to use a different driver then you will have to install it and change the code appropriately
+
 Pandas
 
 You will need to change the path of the csv to one that will fit your computer
